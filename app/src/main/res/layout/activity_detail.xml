@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/da_menu_img"
+        android:layout_width="222dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/big_mac" />
+
+    <TextView
+        android:id="@+id/da_name_text"
+        android:layout_width="350dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:text="Name"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/da_menu_img" />
+
+
+    <TextView
+        android:id="@+id/da_description_text"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:singleLine="false"
+        android:text="Description"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/da_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/da_name_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
